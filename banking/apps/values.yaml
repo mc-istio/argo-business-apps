@@ -2,5 +2,5 @@ spec:
   destination:
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/turkelk/istio-mc-poc
+    repoURL: https://github.com/mc-istio/argo-business-apps
     targetRevision: HEAD
