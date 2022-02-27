@@ -11,7 +11,8 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   syncPolicy:
-    automated:    
+    automated:  
+      prune: true     
   source:
     path: banking/limits
     repoURL: {{ .Values.spec.source.repoURL }}
