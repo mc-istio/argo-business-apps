@@ -10,6 +10,9 @@ spec:
     namespace: banking
     server: {{ .Values.spec.destination.server }}
   project: default
+  syncPolicy:
+    automated:  
+      prune: true      
   source:
     path: banking/transfers
     repoURL: {{ .Values.spec.source.repoURL }}
